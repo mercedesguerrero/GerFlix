@@ -32,14 +32,12 @@ void inicializarSeriesHardCode(eSerie series[])
     int cantidadTemporadas[5] = {10,9,7,5,2};
 
     int i;
-    int id;
-    int cantidad;
 
 
     for(i=0; i<5; i++)
     {
-        series[i].idSerie=id[i];
-        series[i].cantidadTemporadas=cantidad[i];
+        series[i].idSerie=idSerie[i];
+        series[i].cantidadTemporadas=cantidadTemporadas[i];
         series[i].estado = 1;
         strcpy(series[i].nombre, nombre[i]);
         strcpy(series[i].genero, genero[i]);
@@ -50,14 +48,14 @@ void inicializarSeriesHardCode(eSerie series[])
 void mostrarListadoDeSeries(eSerie series[], int cant)
 {
     int i;
-    printf("%5d %20s %5s %d\n","idSerie","nombre","genero","cantidadTemporadas");
+    printf("%5s %20s %5s %s\n","idSerie","Nombre","Genero","Cantidad de Temporadas");
 
 /**< Recorre y si el estado es distinto de 0 la muestra */
     for(i=0; i<cant; i++)
     {
         if(series[i].estado==1)
         {
-            printf("%5d %20s %5s %.2f\n", series[i].idSerie, series[i].nombre, series[i].genero, series[i].cantidadTemporadas);
+            printf("%5d %20s %5s %d\n", series[i].idSerie, series[i].nombre, series[i].genero, series[i].cantidadTemporadas);
         }
     }
 }

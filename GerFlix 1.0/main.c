@@ -14,8 +14,8 @@ int main()
     eUsuario listaDeUsuarios[TAMUSUARIO];
 
     inicializarSeriesEstado(listaDeSeries, TAMSERIE);
-
     inicializarSeriesHardCode(listaDeSeries);
+
     inicializarUsuariosEstado(listaDeUsuarios,TAMUSUARIO);
     inicializarUsuariosHardCode(listaDeUsuarios);
 
