@@ -19,7 +19,7 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
 
     int serie[15] = {100,100,101,101,102,100,100,103,101,102,103,105,105,100,103};
 
-
+    //105 no existe!!!!!!!!!!!!!!!!!!!
 
     int i;
 
